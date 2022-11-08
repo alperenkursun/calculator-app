@@ -1,0 +1,27 @@
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  width: 100vw;
+  height: 100vh;
+}
+
+.container {
+  width: 500px !important;
+  margin: 100px auto !important;
+}
+
+#calculator {
+  width: 400px !important;
+  height: 500px !important;
+}
+
+.color {
+  width: 25px;
+  height: 25px;
+  cursor: pointer;
+}
+
+.color:hover {
+  opacity: 0.9;
+}

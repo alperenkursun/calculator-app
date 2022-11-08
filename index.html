@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Calculator App</title>
+  </head>
+  <body class="bg-light d-flex justify-content-center align-items-center">
+    <div id="calculator" class="bg-white w-100 h-100 shadow-lg">
+      <div class="h-100">
+        <div class="row m-0 w-100 fs-3 fw-light position-relative">
+          <div id="colors" class="p-2 d-flex position-absolute top-0 start-0">
+            <div id="white" class="color rounded-circle bg-white me-1"></div>
+            <div id="black" class="color rounded-circle bg-black me-1"></div>
+            <div id="danger" class="color rounded-circle bg-danger me-1"></div>
+            <div
+              id="warning"
+              class="color rounded-circle bg-warning me-1"
+            ></div>
+          </div>
+          <div
+            id="topdisplay"
+            class="col-12 d-flex justify-content-end align-items-center fs-1 border"
+            style="height: 75px !important; overflow-x: hidden"
+          >
+            0
+          </div>
+          <div
+            id="bottomdisplay"
+            class="col-12 d-flex justify-content-end align-items-center border"
+            style="
+              height: 75px !important;
+              font-size: 40px;
+              overflow-x: hidden !important;
+            "
+          >
+            0
+          </div>
+          <button
+            id="7"
+            onclick="displayy(id)"
+            class="col-3 bg-white border-white"
+            style="height: 75px !important"
+          >
+            7
+          </button>
+          <button
+            id="8"
+            onclick="displayy(id)"
+            class="col-3 bg-white border-white"
+            style="height: 75px !important"
+          >
+            8
+          </button>
+          <button
+            id="9"
+            onclick="displayy(id)"
+            class="col-3 bg-white border-white"
+            style="height: 75px !important"
+          >
+            9
+          </button>
+          <button
+            id="÷"
+            onclick="operatorr(id)"
+            class="col-3 bg-white border-white"
+            style="height: 75px !important"
+          >
+            ÷
+          </button>
+          <button
+            id="4"
+            onclick="displayy(id)"
+            class="col-3 bg-white border-white"
+            style="height: 75px !important"
+          >
+            4
+          </button>
+          <button
+            id="5"
+            onclick="displayy(id)"
+            class="col-3 bg-white border-white"
+            style="height: 75px !important"
+          >
+            5
+          </button>
+          <button
+            id="6"
+            onclick="displayy(id)"
+            class="col-3 bg-white border-white"
+            style="height: 75px !important"
+          >
+            6
+          </button>
+          <button
+            id="x"
+            onclick="operatorr(id)"
+            class="col-3 bg-white border-white"
+            style="height: 75px !important"
+          >
+            ×
+          </button>
+          <button
+            id="1"
+            onclick="displayy(id)"
+            class="col-3 bg-white border-white"
+            style="height: 75px !important"
+          >
+            1
+          </button>
+          <button
+            id="2"
+            onclick="displayy(id)"
+            class="col-3 bg-white border-white"
+            style="height: 75px !important"
+          >
+            2
+          </button>
+          <button
+            id="3"
+            onclick="displayy(id)"
+            class="col-3 bg-white border-white"
+            style="height: 75px !important"
+          >
+            3
+          </button>
+          <button
+            id="−"
+            onclick="operatorr(id)"
+            class="col-3 bg-white border-white"
+            style="height: 75px !important"
+          >
+            −
+          </button>
+          <button
+            id="backspace"
+            onclick="backspacee()"
+            class="col-3 bg-white border-white"
+            style="height: 75px !important"
+          >
+            <i class="fa-solid fa-delete-left"></i>
+          </button>
+          <button
+            id="0"
+            onclick="displayy(id)"
+            class="col-3 bg-white border-white"
+            style="height: 75px !important"
+          >
+            0
+          </button>
+          <button
+            id="="
+            onclick="equal(id)"
+            class="col-3 bg-white border-white"
+            style="height: 75px !important"
+          >
+            =
+          </button>
+          <button
+            id="+"
+            onclick="operatorr(id)"
+            class="col-3 bg-white border-white"
+            style="height: 75px !important"
+          >
+            +
+          </button>
+
+          <button
+            id="C"
+            onclick="C()"
+            ;
+            class="col- bg-white border-white"
+            style="height: 75px !important"
+          >
+            CLEAR
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://kit.fontawesome.com/a3e10ed635.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="script.js"></script>
+  </body>
+</html>
